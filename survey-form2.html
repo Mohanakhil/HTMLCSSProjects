@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightgreen;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            height: 1000px;
+            background-color: white;
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            padding-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        label,
+        p {
+            margin-left: 20px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        input[type=text],
+        input[type=number],
+        select {
+            display: block;
+            width: 95%;
+            height: 30px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 1px;
+            margin-bottom: 30px;
+        }
+
+        input[type=radio] {
+            margin-left: 20px;
+        }
+
+        input[type=checkbox] {
+            margin-left: 20px;
+        }
+
+        input[type=submit] {
+            display: block;
+            width: 95%;
+            margin-top: 80px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 40px;
+            background-color: lightgreen;
+            font-size: 30px;
+            border-radius: 4px;
+            cursor: pointer;
+            color: black;
+        }
+
+        input[type=submit] :hover {
+            background-color: darkgreen;
+        }
+
+        textarea {
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>SURVEY FORM</h1>
+    <div>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <label form="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email">
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age">
+            <label for="option">Which option describes you the best?</label>
+            <select id="option" name="option">
+                <option value="student">Student</option>
+                <option value="working">Working</option>
+                <option value="unemployed">unemployed</option>
+            </select>
+            <p>How comfortable are you with this survey?</p>
+            <label for="radio">
+                <input type="radio" id="radio1" name="comfort">
+                HighlyComfortable</label><br>
+            <label for="radio">
+                <input type="radio" id="radio2" name="comfort">
+                NotComfortable</label><br>
+            <label for="radio">
+                <input type="radio" id="radio3" name="comfort">
+                Ok</label>
+            <p>which languages do you know?</p>
+            <label for="java">
+                <input type="checkbox" id="java">
+                Java</label><br>
+            <label for="python">
+                <input type="checkbox" id="python">
+                Python</label><br>
+            <label for="scala">
+                <input type="checkbox" id="scala">
+                Scala</label><br>
+            <label for="c++">
+                <input type="checkbox" id="c++">
+                C++</label>
+            <p>
+                <label for="suggestion">Any suggestions From your side</label>
+            </p>
+            <textarea id="suggestion" name="suggestion" rows="10" cols="80"></textarea>
+            <input type="submit" value="SUBMIT">
+        </form>
+
+
+    </div>
+</body>
+
+</html>
